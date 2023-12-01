@@ -1,0 +1,7 @@
+le résultat d'un prompt sera forcément du type str
+la méthode confirm retourne un booléen
+variable == un nom, un type, une affectation, une valeur
+type number, string, object, array, boolean
+utilisation de typeOf pour le type de variable
+alert(`bonjour$(firstname) !`
+parseInt permet de modifier le type de la variable

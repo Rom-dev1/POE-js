@@ -27,7 +27,7 @@ test02.innerHTML = '<h2 class="test">test<h2>'
 
 let newSection = document.querySelector('section')
 newSection.id = 'newSection'
-newSection.className('newClass')
+// newSection.className('newClass')
 newSection.classList.add('ajoutClass')
 newSection.classList.remove('cibleClass')
 newSection.classList.replace('cibleClass', 'newClass')
@@ -36,3 +36,18 @@ newSection.classList.replace('cibleClass', 'newClass')
 // element.setAttribute('src','cible.png')
 
 // duplication d'un élément possible avec cloneNode() préciser true dans les param si souhait de copier les enfants
+
+// les  boucles sur les array
+
+let elements = document.querySelectorAll('ul>li');
+
+elements.forEach((element) => {
+    element.style.color = 'red';
+})
+
+let input = document.querySelector('#firstname');
+let fielValue = input.value;
+console.log(fielValue)
+
+// dataset récupère la valeur du dataset de mon label
+let firstname = input.dataset.name;

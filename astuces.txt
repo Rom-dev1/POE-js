@@ -5,3 +5,8 @@ type number, string, object, array, boolean
 utilisation de typeOf pour le type de variable
 alert(`bonjour$(firstname) !`
 parseInt permet de modifier le type de la variable
+
+// DOM 
+
+manipulation des élèments, se fixe sur des noeuds
+le selectorAll retourne un array

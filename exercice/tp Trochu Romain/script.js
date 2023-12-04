@@ -23,18 +23,18 @@ if(valid){
         //utilisation isNaN éventuelle
         if(!nbUser.match(regex) || nbUser < 0){
             // annulation de l'incrémentation si erreur de saisie
-            i--;
+            // i--;
             alert('Erreur de saisie, rééssayer')
         } else {
             if(parseFloat(nbUser) === nbTarget){
                 let score = (10 - i)*10;
                 alert(`Vous avez trouvé, votre score est de ${score}/100`);
-                break
+                break;
             } else {
                 askNewNumber(nbUser);
+                i++;
             }
         }
-        i++;
     }
     if(i > 10){
         alert('Trop tard..')

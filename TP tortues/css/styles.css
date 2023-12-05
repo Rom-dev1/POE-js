@@ -52,7 +52,7 @@ header{
 }
 
 header > div > h1 {
-    width: 80%;
+    width: 90%;
     margin: auto;
     border: 2px solid #ffffff;
     padding: 10px;
@@ -137,9 +137,9 @@ header > div > h1 {
 }
 
 footer{
-    background-image: linear-gradient(to right, var(--transparent-turquoise-theme-color), var(--transparent-blue-theme-color));
+    background-image: linear-gradient(to right, #4ecdc6, #394987);
     background-size: cover;
-    height: 200px;
+    height: 175px;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -150,11 +150,11 @@ footer > div {
     margin-top: 10px;
 }
 footer > div > h2 {
-    width: 300px;
+    width: fit-content;
     margin: auto;
     border: 2px solid #ffffff;
-    padding: 10px;
-    border-radius: 2px;
+    padding: 10px 8px;
+    border-radius: 5px;
     text-transform: uppercase;
     text-align: center;
 }
@@ -175,15 +175,21 @@ footer > div:last-child > ul {
 
 .top-image{
     height: 200px;
-    background-image: url('../public/assets/visit.jpg');
     background-position: center;
     background-size: cover;
     text-align: center;
 }
 .top-image h4{
     padding: 20px;
-    background-color: var(--transparent-turquoise-theme-color);
     color: #ffffff;
+}
+
+.bg-visite h4{
+    background-color: var(--transparent-turquoise-theme-color);
+}
+
+.bg-visite{
+    background-image: url('../public/assets/visit.jpg');
 }
 
 nav{
@@ -202,13 +208,33 @@ nav{
     align-items: end;
 }
 
-.header-content i{
+.header-content h3{
+    font-size: 25px;
+}
+
+.header-content-visit-color{
     color: var(--turquoise-theme-color);
+    margin-right: 5px;
+}
+
+/* price page */
+
+.bg-price{
+    background-image: url('../public/assets/price.jpg');
+}
+
+.bg-price h4{
+    background-color: var(--transparent-light-blue-theme-color);
+}
+
+.header-content-price-color{
+    color: var(--light-blue-theme-color);
+    margin-right: 5px;
 }
 
 @media screen and (min-width: 750px) {
     header > div > h1{
-        width: 100%;
+        width: fit-content;
     }
     #home-section{
         width: 100%;
@@ -223,6 +249,9 @@ nav{
     .link-turtles{
         width: 250px;
         height: 250px;
+    }
+    footer > div:last-child{
+        width: 60%;
     }
 }
 @media screen and (min-width:1400px) {
@@ -246,6 +275,9 @@ nav{
     }
     .top-image{
         height: 100%;
+    }
+    .header-content{
+        padding: 20px 0;
     }
 
 }

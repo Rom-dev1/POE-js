@@ -183,7 +183,7 @@ footer{
     align-items: center;
 }
 
-/* div footer title & title */
+/* div footer & title */
 
 footer > div {
     width: 90%;
@@ -199,7 +199,7 @@ footer > div > h2 {
     text-align: center;
 }
 
-/* link & logo */
+/* footer legal notice & logo */
 
 footer > div:last-child{
     display: flex;
@@ -214,7 +214,8 @@ footer > div:last-child > ul {
     width: 60px;
 }
 
-/* visite page */
+
+/* base of other pages */
 
 /* img & title under header */
 
@@ -227,14 +228,6 @@ footer > div:last-child > ul {
 .top-image h4{
     padding: 20px;
     color: #ffffff;
-}
-
-.bg-visite h4{
-    background-color: var(--transparent-turquoise-theme-color);
-}
-
-.bg-visite{
-    background-image: url('../public/assets/visit.jpg');
 }
 
 /* main */
@@ -259,11 +252,6 @@ nav{
     font-size: 25px;
 }
 
-.header-content-visit-color{
-    color: var(--turquoise-theme-color);
-    margin-right: 5px;
-}
-
 /* content section */
 
 .content{
@@ -271,8 +259,27 @@ nav{
     margin: auto;
 }
 
-/* price page */
 
+/* visite page */
+/* bg 'nos tarifs et horaires' */
+
+.bg-visite h4{
+    background-color: var(--transparent-turquoise-theme-color);
+}
+
+.bg-visite{
+    background-image: url('../public/assets/visit.jpg');
+}
+
+/* color logo & title */
+
+.header-content-visit-color{
+    color: var(--turquoise-theme-color);
+    margin-right: 5px;
+}
+
+/* price page */
+/* bg 'nos tarifs et horaires' */
 .bg-price{
     background-image: url('../public/assets/price.jpg');
 }
@@ -287,7 +294,7 @@ nav{
 }
 
 /* formation page */
-
+/* bg 'bos formation' */
 .bg-formation{
     background-image: url('../public/assets/training.jpg');
 }

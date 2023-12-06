@@ -321,7 +321,7 @@ nav{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        height: 80vh;
+        height: 70vh;
     }
     .container-turtles{
         width: 30%;

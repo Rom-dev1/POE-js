@@ -305,7 +305,7 @@ nav{
 }
 
 /* formation page */
-/* bg 'bos formation' */
+/* bg 'nos formation' */
 .bg-formation{
     background-image: url('../public/assets/training.jpg');
 }
@@ -321,6 +321,8 @@ nav{
 
 /* meet page */
 
+/* bg 'nos tortues' */
+
 .bg-meet{
     background-image: url('../public/assets/turtle.jpg');
 }
@@ -334,12 +336,7 @@ nav{
     margin-right: 5px;
 }
 
-/* display all tortues */
-
-/* .display-all-turtles{
-    display: flex;
-    flex-direction: column;
-} */
+/* card to contain imf oof turtles */
 
 .content article{
     width: 250px;
@@ -353,6 +350,8 @@ nav{
 
 }
 
+/* img in card */
+
 .content article img{
     width: 100%;
     height: 80%;
@@ -364,6 +363,8 @@ nav{
     cursor: zoom-in;
 }
 
+/* hover img card */
+
 .content article img:hover{
     height: 100%;
     filter: grayscale(50%);
@@ -373,6 +374,8 @@ nav{
 .content article div{
     margin: 15px 0;
 }
+
+/* name & age of turtles */
 
 .content article div:last-child{
     text-transform: uppercase;
@@ -387,11 +390,15 @@ nav{
     margin-bottom: 20px;
 }
 
+/* text after newsletter */
+
 section:last-child div .header-content  + p{
     text-align: center;
     font-weight: bold;
     margin: 30px;
 }
+
+/* display form newsletter */
 
 .content form{
     display: flex;
@@ -405,6 +412,8 @@ form > div{
     display: flex;
 }
 
+/* div ton contain input email */
+
 .content form > div > div:first-child {
     width: 300px;
     display: flex;
@@ -413,6 +422,8 @@ form > div{
 .content form > div > div:first-child label{
     width: 0;
 }
+
+/* padding & border of input */
 
 .content-form input{
     padding: 10px;
@@ -423,6 +434,8 @@ form > div{
     border-radius: 5px 0  0 5px;
 }
 
+/* style btn submit */
+
 .btn-submit{
     border-radius: 0 5px 5px 0;
     background-color: var(--blue-theme-color);
@@ -431,20 +444,28 @@ form > div{
     padding: 10px 15px;
 }
 
+/* styles errors input email */
+
 .input-error-email{
     border: 2px solid #be2431
 }
+
+/* styles error btn */
 
 .input-error-btn{
     border: 2px solid #be2431;
     background-color: #be2431;
 }
 
+/* styles error text */
+
 .text-error{
     color: #be2431;
     font-weight: bold;
     margin-left: 10px;
 }
+
+/* congratulations style to text valid */
 
 .valid{
     background-color: #d5e8dc;
@@ -455,6 +476,8 @@ form > div{
     object-fit: fill;
 }
 
+/* class overlay to apply on img for display zoom */
+
 .overlay{
     width: 100%;
     position: fixed;
@@ -464,11 +487,17 @@ form > div{
     right: 0;
     bottom: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
     min-height: 100%;
     z-index: 100;
     cursor: zoom-out;
+}
+
+.overlay img{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    object-fit: contain;
 }
 
 @media screen and (min-width: 750px) {
@@ -484,7 +513,7 @@ form > div{
         display: flex;
         justify-content: space-around;
         flex-direction: row;
-        height: 50vh;
+        height: 70vh;
     }
     .container-turtles{
         width: 30%;
@@ -554,7 +583,7 @@ form > div{
         min-height: 70vh;
     }
 
-    .pages-content > div{
+    .pages-content #bg-img-meet{
         width: 25%
     }
 
@@ -601,6 +630,5 @@ form > div{
         display: flex;
         flex-direction: row;
         width: 100%;
-        justify-content: space-around;
     }
 }

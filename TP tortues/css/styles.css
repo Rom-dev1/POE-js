@@ -49,6 +49,7 @@ ul{
 .fa-solid{
     color: #0a415b;
     font-size: 28px;
+    margin-right: 20px;
 }
 
 /* header home & all pages */
@@ -79,52 +80,61 @@ header > div > h1 {
 
 /* main */
 
+/* display all turtles */
 .container-turtles{
     width: 100%;
-    display: flex;
     padding: 20px 0;
+    display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
+/* div to contain img with border radius */
+
 .link-turtles{
     width: 200px;
-    border-radius: 50%;
-    position: relative;
     height: 200px;
-    margin: auto;
+    position: relative;
     border-radius: 50% 50% 0% 50%;
     overflow: hidden;
-    background-color: blue;
-    z-index: 50;
 }
 
 /* filter on img */
 
-.link-turtles .tp-turquoise{
+.link-turtles .tp-size{
     height: 100%;
     width: 100%;
+}
+
+.link-turtles .tp-turquoise{
     background-color: var(--transparent-turquoise-theme-color);
 }
 
 .link-turtles .tp-light-blue{
-    height: 100%;
-    width: 100%;
     background-color: var(--transparent-light-blue-theme-color);
 }
+
 .link-turtles .tp-blue{
-    height: 100%;
-    width: 100%;
     background-color: var(--transparent-blue-theme-color);
 }
 
 /* img */
+/* position img */
 
 .link-turtles img {
     width: 100%;
-    height: 300px;
+    height: 100%;
     object-fit: cover;
-    object-position: 60%;
+}
+
+/* special postion for 2nd & third turtles */
+
+#light-blue-price{
+    object-position: 90% 40%;
+}
+
+#blue-training{
+    object-position: 50% 30%;
 }
 
 /* link bottom-right of img & color bg */
@@ -148,6 +158,8 @@ header > div > h1 {
 #link-blue-training{
     background-color: var(--blue-theme-color);
 }
+
+/* customise link  */
 
 .link-turtles div a {
     width: 90%;
@@ -204,6 +216,8 @@ footer > div:last-child > ul {
 
 /* visite page */
 
+/* img & title under header */
+
 .top-image{
     height: 200px;
     background-position: center;
@@ -223,21 +237,23 @@ footer > div:last-child > ul {
     background-image: url('../public/assets/visit.jpg');
 }
 
+/* main */
+
+/* main nav */
+
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 250px;
     padding: 30px;
 }
-.content{
-    padding: 0 15px 10px 15px;
-    margin: auto;
-}
+
+/* main header section */
+
 .header-content{
     display: flex;
     align-items: end;
 }
+
 
 .header-content h3{
     font-size: 25px;
@@ -246,6 +262,13 @@ nav{
 .header-content-visit-color{
     color: var(--turquoise-theme-color);
     margin-right: 5px;
+}
+
+/* content section */
+
+.content{
+    padding: 0 15px 10px 15px;
+    margin: auto;
 }
 
 /* price page */
@@ -279,6 +302,7 @@ nav{
 }
 
 @media screen and (min-width: 750px) {
+
     header > div > h1{
         width: fit-content;
     }
@@ -307,11 +331,21 @@ nav{
         font-size: 20px;
     }
 
-    footer > div:last-child{
-        width: 60%;
+    /* footer tablet */
+
+    footer > div:last-child > ul {
+        width: 80px;
     }
+
+    footer .fa-brands{
+        font-size: 20px;
+    }
+
 }
 @media screen and (min-width:1400px) {
+
+    /*  increase size img turtles*/
+
     .link-turtles{
         height: 400px;
         width: 400px;
@@ -325,6 +359,8 @@ nav{
         height: 400px;
     }
 
+    /* display img row */
+
     .pages-content{
         display: flex;
         min-height: 50vh;
@@ -334,23 +370,25 @@ nav{
         width: 25%
     }
 
-    .pages-content div:last-child{
-        width: 100%;
+    /* header in page content */
+
+    .header-content{
+        padding-bottom: 20px;
     }
 
     .top-image{
         height: 100%;
     }
 
-    .header-content{
-        padding-bottom: 20px;
+    /* increase content div content to occpy space */
+
+    .pages-content div:last-child{
+        flex-grow: 1;
     }
+
+    /* footer desktop */
 
     footer .fa-brands{
         font-size: 24px;
-    }
-    
-    footer > div:last-child > ul {
-        width: 80px;
     }
 }

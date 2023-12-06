@@ -338,6 +338,11 @@ nav{
         font-size: 20px;
     }
 
+    .pages-content{
+        display: flex;
+        min-height: 70vh;
+    }
+
     /* footer tablet */
 
     footer > div:last-child > ul {
@@ -370,7 +375,7 @@ nav{
 
     .pages-content{
         display: flex;
-        min-height: 50vh;
+        min-height: 70vh;
     }
 
     .pages-content > div{

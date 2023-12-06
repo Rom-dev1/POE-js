@@ -15,7 +15,7 @@
             </h1>
         </div>
     </header>
-    <main class="pages-content">
+    <main class="pages-content" id="main-meet">
         <div id="big-img-meet">
             <div class="top-image bg-meet">
                 <h4>nos tortues !</h4>
@@ -36,13 +36,13 @@
                <div>
                     <div class="display-two-turtle">
                         <article>
-                            <img src="./assets/zoom-turles/turtle-alice.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-alice.png" data-name="alice" alt="turtle-alice">
                             <div>
                                 <span>alice : 30 ans</span>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/zoom-turles/turtle-elio.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-elio.png" data-name="elio" ="turtle-elio">
                             <div>
                                 <span>élio : 20 ans</span>
                             </div>
@@ -50,13 +50,13 @@
                     </div>
                     <div class="display-two-turtle">
                         <article>
-                            <img src="./assets/zoom-turles/turtle-elise.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-elise.png" data-name="elise" alt="turtle-elise">
                             <div>
                                 <span>élise : 7 ans</span>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/zoom-turles/turtle-emilie.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-emilie.png" data-name="emilie" alt="turtle-emilie">
                             <div>
                                 <span>émilie : 15 ans</span>
                             </div>
@@ -64,13 +64,13 @@
                     </div>
                     <div class="display-two-turtle">
                         <article>
-                            <img src="./assets/zoom-turles/turtle-gertrude.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-gertrude.png" data-name="gertrude" alt="turtle-gertrude">
                             <div>
                                 <span>gertrude : 80 ans</span>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/zoom-turles/turtle-jeannot.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-jeannot.png" data-name="jeannot" alt="turtle-jeannot">
                             <div>
                                 <span>jeannot : 23 ans</span>
                             </div>
@@ -78,13 +78,13 @@
                     </div>
                     <div class="display-two-turtle">
                         <article>
-                            <img src="./assets/zoom-turles/turtle-lili.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-lili.png" data-name="lili" alt="turtle-lili">
                             <div>
                                 <span>lili : 3 ans</span>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/zoom-turles/turtle-lucie.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-lucie.png" data-name="lucie" alt="turtle-lucie">
                             <div>
                                 <span>lucie : 32 ans</span>
                             </div>
@@ -92,13 +92,13 @@
                     </div>
                     <div class="display-two-turtle">
                         <article>
-                            <img src="./assets/zoom-turles/turtle-lucien.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-lucien.png" data-name="lucien" alt="lucien">
                             <div>
                                 <span>lucien 34 ans</span>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/zoom-turles/turtle-nelly.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-nelly.png" data-name="nelly" alt="turtle-nelly">
                             <div>
                                 <span>nelly : 42 ans</span>
                             </div>
@@ -106,13 +106,13 @@
                     </div>
                     <div class="display-two-turtle">
                         <article>
-                            <img src="./assets/zoom-turles/turtle-nina.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-nina.png" data-name="nina" alt="turtle-nina">
                             <div>
                                 <span>nina : 1 an</span>
                             </div>
                         </article>
                         <article>
-                            <img src="./assets/zoom-turles/turtle-norbert.png" alt="">
+                            <img src="./assets/zoom-turles/turtle-norbert.png" data-name="norbert" alt="turtle-norbert">
                             <div>
                                 <span>norbert : 46 ans</span>
                             </div>
@@ -130,12 +130,14 @@
                 </div>
                 <div class="container-form">
                     <form action="cible.php" method="post">
-                        <div>
-                            <label for="newsletter"></label>
-                            <input type="text" name="newsletter" id="newsletter" placeholder="alice@exemple.com">
-                        </div>
-                        <div>
-                            <input type="submit" value="Envoyer">
+                        <div id="content-form">
+                            <div>
+                                <label for="email">email</label>
+                                <input type="email" name="email" id="newsletter" placeholder="alice@exemple.com">
+                            </div>
+                            <div>
+                                <input type="submit" value="Envoyer" class="btn-submit">
+                            </div>
                         </div>
                     </form>
                 </div>

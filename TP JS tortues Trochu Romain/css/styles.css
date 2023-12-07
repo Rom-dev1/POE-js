@@ -1,9 +1,11 @@
+/* UTILITY */
 /* variable color */
 :root{
     --dark-blue-theme-color: rgba(2, 8, 44);
     --blue-theme-color: #031163;
     --light-blue-theme-color: #1978A5;
     --turquoise-theme-color: #1FBFB8;
+    --error-theme-color : #be2431;
     --transparent-dark-blue-theme-color: rgba(2, 8, 44, 0.54);
     --transparent-blue-theme-color: rgba(3, 17, 99, 0.54);
     --transparent-light-blue-theme-color: rgba(25, 120, 165, 0.54);
@@ -46,14 +48,8 @@ ul{
     align-items: center;
 }
 
-/* logo home */
-
-.fa-solid{
-    color: #0a415b;
-    font-size: 28px;
-    margin-right: 20px;
-}
-
+/* -------------------------------------------------------------- */
+/* HOME PAGE */
 /* header home & all pages */
 
 header{
@@ -225,9 +221,8 @@ footer > div:last-child > ul {
     width: 60px;
 }
 
-
-/* base of other pages */
-
+/* ---------------------------------------------------------- */
+/* BASE OF OTHERS PAGES */
 /* img & title under header */
 
 .top-image{
@@ -251,6 +246,14 @@ nav{
     padding: 30px;
 }
 
+/* logo home */
+
+.fa-solid{
+    color: #0a415b;
+    font-size: 28px;
+    margin-right: 20px;
+}
+
 /* main header section */
 
 .header-content{
@@ -270,8 +273,8 @@ nav{
     margin: auto;
 }
 
-
-/* visite page */
+/* -------------------------------------------------------------- */
+/* VISITE PAGE */
 /* bg 'nos tarifs et horaires' */
 
 .bg-visite h4{
@@ -288,8 +291,8 @@ nav{
     color: var(--turquoise-theme-color);
     margin-right: 5px;
 }
-
-/* price page */
+/* -------------------------------------------------------------- */
+/* PRICE PAGE */
 /* bg 'nos tarifs et horaires' */
 .bg-price{
     background-image: url('../public/assets/price.jpg');
@@ -304,7 +307,8 @@ nav{
     margin-right: 5px;
 }
 
-/* formation page */
+/* ---------------------------------------------------------------- */
+/* FORMATION PAGE */
 /* bg 'nos formation' */
 .bg-formation{
     background-image: url('../public/assets/training.jpg');
@@ -319,8 +323,8 @@ nav{
     margin-right: 5px;
 }
 
-/* meet page */
-
+/* ----------------------------------------------------------------- */
+/* MEET PAGE */
 /* bg 'nos tortues' */
 
 .bg-meet{
@@ -336,7 +340,7 @@ nav{
     margin-right: 5px;
 }
 
-/* card to contain imf oof turtles */
+/* card to contain img of turtles */
 
 .content article{
     width: 250px;
@@ -439,7 +443,7 @@ form > div{
 .btn-submit{
     border-radius: 0 5px 5px 0;
     background-color: var(--blue-theme-color);
-    border-color: #031163;
+    border-color: var(--blue-theme-color);
     color: #ffffff;
     padding: 10px 15px;
 }
@@ -447,20 +451,20 @@ form > div{
 /* styles errors input email */
 
 .input-error-email{
-    border: 2px solid #be2431
+    border: 2px solid var(--error-theme-color);
 }
 
 /* styles error btn */
 
 .input-error-btn{
-    border: 2px solid #be2431;
-    background-color: #be2431;
+    border: 2px solid var(--error-theme-color);
+    background-color: var(--error-theme-color);
 }
 
 /* styles error text */
 
 .text-error{
-    color: #be2431;
+    color: var(--error-theme-color);
     font-weight: bold;
     margin-left: 10px;
 }
@@ -547,6 +551,7 @@ form > div{
     }
 
     /* page meet */
+
     .display-two-turtle{
         display: flex;
         flex-wrap: wrap;
@@ -560,6 +565,7 @@ form > div{
 @media screen and (min-width:1400px) {
 
     /*  increase size img turtles*/
+
     #home-section{
         height: 80vh;
     }
@@ -610,6 +616,7 @@ form > div{
     }
 
     /* size img page meet */
+
     #big-img-meet{
         width: 40%;
     }
@@ -623,6 +630,9 @@ form > div{
     section:last-child p{
         text-align: left;
     }
+
+    /* container form */
+
     .container-form{
         width: 100%;
     }

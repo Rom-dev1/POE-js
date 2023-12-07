@@ -225,6 +225,7 @@ footer > div:last-child > ul {
 /* BASE OF OTHERS PAGES */
 /* img & title under header */
 
+
 .top-image{
     height: 200px;
     background-position: center;
@@ -616,6 +617,10 @@ form > div{
     }
 
     /* size img page meet */
+
+    .mid-img{
+        width: 60%;
+    }
 
     #big-img-meet{
         width: 40%;
